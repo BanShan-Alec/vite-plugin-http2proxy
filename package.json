@@ -1,5 +1,5 @@
 {
-  "name": "@banshan/vite-plugin-http2proxy",
+  "name": "@banshan-alec/vite-plugin-http2proxy",
   "version": "1.0.0",
   "description": "An easy to use plugin to solve the problem that vite does not support http2Proxy.", 
   "type": "module",
