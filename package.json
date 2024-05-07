@@ -11,6 +11,12 @@
     "build": "vite build",
     "pub": "npm publish --access public"
   },
+  "publishConfig": {
+    "@banshan-alec:registry": "https://npm.pkg.github.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BanShan-Alec/vite-plugin-http2Proxy.git"},
   "keywords": [
     "vite",
     "plugin",

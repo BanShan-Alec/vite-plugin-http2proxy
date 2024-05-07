@@ -15,3 +15,9 @@ export default defineConfig({
     }
   },
 })
+
+// 发布到 github npm
+// https://docs.github.com/en/packages/quickstart
+// https://docs.github.com/zh/packages/working-with-a-github-packages-registry/working-with-the-npm-registry
+// https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens
+// https://github.com/settings/personal-access-tokens/new
