@@ -7,9 +7,10 @@
   "main": "./dist/vite-plugin-http2proxy.cjs",
   "module": "./dist/vite-plugin-http2proxy.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo \"Normal: no test specified\" && exit 0",
     "build": "vite build",
-    "pub": "npm publish --access public"
+    "pub": "npm publish --access public",
+    "ci": "npm run build && npm run test"
   },
   "publishConfig": {
     "@banshan-alec:registry": "https://npm.pkg.github.com"
