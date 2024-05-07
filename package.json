@@ -1,7 +1,7 @@
 {
   "name": "vite-plugin-http2proxy",
   "version": "1.0.0",
-  "description": "", 
+  "description": "An easy to use plugin to solve the problem that vite does not support http2Proxy.", 
   "type": "module",
   "files": ["dist"],
   "main": "./dist/vite-plugin-http2proxy.cjs",
