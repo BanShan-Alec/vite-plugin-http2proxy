@@ -11,7 +11,7 @@ const error = (message: string): never => {
 export default (): Plugin => {
   let proxyConfig: TProxy;
   return {
-    name: "vite-plugin-http2Proxy",
+    name: "vite-http2-proxy",
     config: async (config, env) => {
       // https://cn.vitejs.dev/guide/api-javascript.html#resolveconfig
       if (env.command !== "serve") {
@@ -30,13 +30,13 @@ export default (): Plugin => {
           },
         };
       } catch (err) {
-        console.error("[http2Proxy]: error", err);
+        console.error("[vite-http2-proxy]: error", err);
       }
     },
     // https://cn.vitejs.dev/guide/api-plugin#vite-specific-hooks
     configureServer: ({ middlewares }: { middlewares: Connect.Server }) => {
       if (!proxyConfig) {
-        console.info("[http2Proxy]: No proxy configuration found.");
+        console.info("[vite-http2-proxy]: No proxy configuration found.");
         return;
       }
       for (const [key, value] of Object.entries(proxyConfig)) {

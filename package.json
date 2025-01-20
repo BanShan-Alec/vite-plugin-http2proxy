@@ -1,21 +1,21 @@
 {
-  "name": "@banshan-alec/vite-plugin-http2proxy",
+  "name": "vite-http2-proxy",
   "version": "1.0.0",
   "description": "An easy to use plugin to solve the problem that vite does not support http2Proxy.",
   "type": "module",
   "files": [
     "dist"
   ],
-  "main": "./dist/vite-plugin-http2proxy.cjs",
-  "module": "./dist/vite-plugin-http2proxy.js",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
   "scripts": {
     "test": "echo \"Normal: no test specified\" && exit 0",
-    "build": "vite build",
+    "build": "tsc && vite build",
     "pub": "npm publish --access=public",
     "ci": "npm run build && npm run test"
   },
   "publishConfig": {
-    "@banshan-alec:registry": "https://registry.npmjs.org"
+    "registry": "https://registry.npmjs.org/"
   },
   "repository": {
     "type": "git",
@@ -24,12 +24,16 @@
   "keywords": [
     "vite",
     "plugin",
-    "http2proxy"
+    "http2proxy",
+    "http2-proxy",
+    "devcert",
+    "vite-plugin",
+    "http2"
   ],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "peerDependencies": {
-    "vite": "^5.0.0"
+    "vite": ">=5"
   },
   "dependencies": {
     "devcert": "^1.2.2",
